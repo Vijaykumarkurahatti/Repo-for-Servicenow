@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="ignore_baseline=true" db_object_id="3616232a9710b51036a230d3f153afa8" extends="cmdb_qb_result_base" label="Asset out of sync-Query Results" max_length="40" name="x_909790_applicati_u_cmdb_qb_result_14b19479b08bfb472979bfa37321d9f07065a25c" type="collection"/>
+</database>

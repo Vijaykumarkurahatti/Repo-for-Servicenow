@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD130cf733fcd8f110c22a6247ab36ba56</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>3f3b77619714b11036a230d3f153af4d</scope_name>
+        <serialized_content>{"FlowDesigner:FD130cf733fcd8f110c22a6247ab36ba56":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"true\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"true\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FD130cf733fcd8f110c22a6247ab36ba56.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"24db4cae-d074-45d8-88f8-b0e026e7cf5b\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD130cf733fcd8f110c22a6247ab36ba56\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"3\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:30:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d30cf73397d8f11036a230d3f153af56</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>FD130cf733fcd8f110c22a6247ab36ba56</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Application 1" source="x_909790_applicati">3f3b77619714b11036a230d3f153af4d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Application 1">3f3b77619714b11036a230d3f153af4d</sys_scope>
+        <sys_update_name>sys_complex_object_d30cf73397d8f11036a230d3f153af56</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:30:40</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+</record_update>

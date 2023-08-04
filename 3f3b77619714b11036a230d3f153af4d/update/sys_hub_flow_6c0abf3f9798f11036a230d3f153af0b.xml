@@ -1,0 +1,1690 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from>45e9da0c1b6ae194648feb17624bcb0d</copied_from>
+        <copied_from_name>MRDS New</copied_from_name>
+        <description/>
+        <internal_name>mrds_test_for_app</internal_name>
+        <label_cache>[{"name":"flow_variable.discovery_ip","label":"Flow Variables➛discovery_ip","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"b2406763-7685-41cd-ad2e-4e755aaaf5d2"}},{"name":"flow_variable.discovery_statusid","label":"Flow Variables➛discovery_statusid","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"7c2065ee-5ab4-4d14-addb-091634678771"}},{"name":"74aee0ce-bc37-40c0-a34f-e13c6c70bb53.item","label":"5 - For Each➛chunk_thousand_child0","reference_display":"chunk_thousand_child0","type":"string","base_type":"string","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"b85314a2-f44c-48ff-8a76-11071ee9c309.chunk_thousand","label":"3 - MRDS: Split➛chunk_thousand","reference_display":"chunk_thousand","type":"array.string","base_type":"array.string","attributes":{"uiTypeLabel":"Array.String","co_type_name":"FD2bd55b982ce6e9944e7039acb0def0d6","child_label":"chunk_thousand_child0","child_type_label":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.string","child_type":"string","child_name":"chunk_thousand_child0","child_uiUniqueId":"d5da259f-6371-4d78-9666-cda3cf6fcb2a","uiUniqueId":"c4aeeae1-9c94-4ba0-8964-b16e776c5cf7"}},{"name":"b720f85a-f843-49e6-b769-1996a26a8cc2.sys_id_cmdb","label":"2 - MRDS: Last 30 days with ip address➛sys_id_cmdb","reference_display":"sys_id_cmdb","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"d4520832-28b5-4fbb-b91d-0df0e8c61574"}},{"name":"b720f85a-f843-49e6-b769-1996a26a8cc2.ip_address","label":"2 - MRDS: Last 30 days with ip address➛ip_address","reference_display":"ip_address","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"f8575b76-3109-43a7-b651-461798e81615"}},{"name":"101778ab-e4c2-4630-88aa-83acedf10e26.Record","label":"17 - Look Up Record➛Catalog Task Record","reference":"sc_task","reference_display":"Catalog Task","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2fbc2c1a-e608-4678-be81-f1b424fb2829.requested_item.request","label":"16 - Submit Catalog Item Request➛Requested Item➛Request","reference":"sc_request","reference_display":"Request","type":"reference","base_type":"reference","parent_table_name":"sc_req_item","column_name":"request"},{"name":"78a3afbd-d225-4aca-b9d1-5cdd679b547f.sys_id_cmdb","label":"4 - MRDS: Last 30 days with ip➛sys_id_cmdb","reference_display":"sys_id_cmdb","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"f5a5317a-b63c-47e9-b94e-926e22fcc9b7"}},{"name":"78a3afbd-d225-4aca-b9d1-5cdd679b547f.ip_address","label":"4 - MRDS: Last 30 days with ip➛ip_address","reference_display":"ip_address","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"b6ce61ce-fb72-4cbe-8a47-65f5df7d2bf1"}},{"name":"d5a2cc2f-3cd2-4296-bf83-e31f7cbed0fc.notconsiderip","label":"14 - Get Flow Outputs➛notconsiderip","reference_display":"notconsiderip","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","child_label":"notconsiderip_child0","child_type_label":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","child_type":"string","child_name":"notconsiderip_child0","child_uiUniqueId":"381a08ab-0283-4413-b82f-4a0fb1f3ca41","uiUniqueId":"3e74416b-1fe7-42dc-94f3-422bd69ea8a1"}},{"name":"cdb09a16-4400-4091-8fb5-027a5443cd92.context","label":"13 - MRDS: Subflow for filtered Dicovery Logs➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"8e8fe686-2c9d-4842-8a6d-4853cb0ef9df.users","label":"1 - MRDS: No ips➛user_server","reference_display":"user_server","type":"array.object","base_type":"array.object","attributes":{"sourceId":"9b13f3c9-1694-4899-bb78-4e1fe71a03f3","child_name":"user","uiUniqueId":"04e9a796-e611-444d-95fa-ce5ed0726bb7","uiTypeLabel":"Array.Object","co_type_name":"FDc5923f548e782150f0b6f2ce7e7f7467","child_label":"user","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"d8f2c2e2-c97b-4e42-878e-2b9c5f1dcf1a","uiType":"array.object","child_type":"object","child_uiUniqueId":"a4f18dc9-f800-4767-a8e0-fa835034085c"}},{"name":"8e8fe686-2c9d-4842-8a6d-4853cb0ef9df.sys_id_cmdb","label":"1 - MRDS: No ips➛sys_id_cmdb_server","reference_display":"sys_id_cmdb_server","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"9e287f1d-09fe-4f3e-9800-0d59a0fbdca1"}},{"name":"8e8fe686-2c9d-4842-8a6d-4853cb0ef9df.__action_status__","label":"1 - MRDS: No ips➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"d9f8865d-1870-4f4b-9b8e-5e993c5999fe"}},{"name":"8e8fe686-2c9d-4842-8a6d-4853cb0ef9df.__dont_treat_as_error__","label":"1 - MRDS: No ips➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"491e4724-3df9-47a2-96cf-ec7d61e6b018"}},{"name":"8e8fe686-2c9d-4842-8a6d-4853cb0ef9df.user_netgear","label":"1 - MRDS: No ips➛user_netgear","reference_display":"user_netgear","type":"array.object","base_type":"array.object","attributes":{"sourceId":"9f1e4cd9-392c-4e94-95c0-86a9d0a0a961","child_name":"user","uiUniqueId":"b6d79e36-1be6-44e7-9689-143bc1a234da","uiTypeLabel":"Array.Object","co_type_name":"FDb0615866227021d03297f72c55b750f5","child_label":"user","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"6d80b91c-b3ce-4b85-9702-9e019617c7a9","uiType":"array.object","child_type":"object","child_uiUniqueId":"d36b3aa3-74f8-4c35-8add-105241c2efd6"}},{"name":"8e8fe686-2c9d-4842-8a6d-4853cb0ef9df.sys_id_cmdb_netgear","label":"1 - MRDS: No ips➛sys_id_cmdb_netgear","reference_display":"sys_id_cmdb_netgear","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"c4f39383-e028-4f58-84cc-ce5f0d550942"}},{"name":"88a58abe-00a8-4116-a3ff-a1b1cd45b099.context","label":"2 - MRDS: SG Create Task➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"88a58abe-00a8-4116-a3ff-a1b1cd45b099.affected_sysids","label":"2 - MRDS: SG Create Task➛Affected sysids","reference_display":"Affected sysids","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2af945ec-5c5f-4991-8ea9-e1e2d0798acb"}},{"name":"26cc659f-1214-4b66-a100-818ac8e90436.__action_status__","label":"3 - MRDS: Duplicateipscript➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"8d5e3dd7-d8eb-4c33-bf7a-4f16987db49a"}},{"name":"26cc659f-1214-4b66-a100-818ac8e90436.__dont_treat_as_error__","label":"3 - MRDS: Duplicateipscript➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"aeb71fa9-f8e4-4a48-a595-bd695ca44edb"}},{"name":"26cc659f-1214-4b66-a100-818ac8e90436.duplicateipoutput","label":"3 - MRDS: Duplicateipscript➛DuplicateIPoutput","reference_display":"DuplicateIPoutput","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"6ec13d33-4a3a-471d-badb-f74716fd9b67"}},{"name":"26cc659f-1214-4b66-a100-818ac8e90436.name","label":"3 - MRDS: Duplicateipscript➛name","reference_display":"name","type":"array.string","base_type":"array.string","attributes":{"uiTypeLabel":"Array.String","co_type_name":"FD7dee10aae33421d0431565a1ff9c7335","child_label":"name_child0","child_type_label":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"array.string","child_type":"string","child_name":"name_child0","child_uiUniqueId":"ae60a57a-1777-4683-a7ce-21f9a25204e7","uiUniqueId":"37e0b9f2-2d2e-4223-86bf-ec41be71694c"}},{"name":"26cc659f-1214-4b66-a100-818ac8e90436.serial_number","label":"3 - MRDS: Duplicateipscript➛serial_number","reference_display":"serial_number","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"eb0bc184-df0f-4cf3-8c6f-155974331c00"}},{"name":"26cc659f-1214-4b66-a100-818ac8e90436.ip_address","label":"3 - MRDS: Duplicateipscript➛ip_address","reference_display":"ip_address","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"337d31f4-8822-41cf-80e8-fc3cdd05c9fb"}},{"name":"26cc659f-1214-4b66-a100-818ac8e90436.device_sys","label":"3 - MRDS: Duplicateipscript➛device_sys","reference_display":"device_sys","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"e299086d-350c-4775-bb9f-1eda5af066df"}},{"name":"26cc659f-1214-4b66-a100-818ac8e90436.ip_address_netgear","label":"3 - MRDS: Duplicateipscript➛ip_address_netgear","reference_display":"ip_address_netgear","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"eb20e7cd-b274-4a07-a5b5-68eba3f32cad"}},{"name":"26cc659f-1214-4b66-a100-818ac8e90436.device_sys_netgear","label":"3 - MRDS: Duplicateipscript➛device_sys_netgear","reference_display":"device_sys_netgear","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"aac7b750-8b4b-4663-831b-00aab5bdf4f2"}},{"name":"72b267ae-1030-488c-812c-232687d47d22.users","label":"5 - MRDS: MRDS Last 30 days with Ips➛users","reference_display":"users","type":"array.object","base_type":"array.object","attributes":{"sourceId":"b6951f28-b9e9-480c-a180-07c2f7d3f292","child_name":"user","uiUniqueId":"6a717bed-34a9-4ca3-a077-16743d80a79b","uiTypeLabel":"Array.Object","co_type_name":"FD88aea3d48c382150bf145ae64349dc05","child_label":"user","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"c77e610c-16cc-45da-b78a-00e43efb6a4a","uiType":"array.object","child_type":"object","child_uiUniqueId":"54baf8c2-3728-4a55-9bbc-88be58cc0dbb"}},{"name":"72b267ae-1030-488c-812c-232687d47d22.duplicatepresent","label":"5 - MRDS: MRDS Last 30 days with Ips➛duplicatepresent","reference_display":"duplicatepresent","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"0021fe9a-957d-4778-b778-3469df4ecf75"}},{"name":"72b267ae-1030-488c-812c-232687d47d22.sys_id_cmdb","label":"5 - MRDS: MRDS Last 30 days with Ips➛sys_id_cmdb","reference_display":"sys_id_cmdb","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"6f4fc556-f957-4741-ab0a-23313ebdd11b"}},{"name":"72b267ae-1030-488c-812c-232687d47d22.sys_id_task","label":"5 - MRDS: MRDS Last 30 days with Ips➛sys_id_task","reference_display":"sys_id_task","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"100ce403-2efb-4cce-a7ba-e7da5ae18a78"}},{"name":"72b267ae-1030-488c-812c-232687d47d22.ip_address","label":"5 - MRDS: MRDS Last 30 days with Ips➛ip_address","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"b98fcac3-b38e-4da9-9911-1a839a295d0c"}},{"name":"72b267ae-1030-488c-812c-232687d47d22.__action_status__","label":"5 - MRDS: MRDS Last 30 days with Ips➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"1f4ef423-16da-418e-9204-f6869a07133c"}},{"name":"72b267ae-1030-488c-812c-232687d47d22.__dont_treat_as_error__","label":"5 - MRDS: MRDS Last 30 days with Ips➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"71fc9db3-f197-409f-bfb7-ecc410cc2e2e"}},{"name":"a4285a20-f20d-4c72-aedb-6df5ac7bb78a.__action_status__","label":"7 - MRDS: MRDS Discovery Action➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"d7a6a69f-2d89-47ba-8741-dac83d9ab031"}},{"name":"a4285a20-f20d-4c72-aedb-6df5ac7bb78a.__dont_treat_as_error__","label":"7 - MRDS: MRDS Discovery Action➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"e5f5e8e2-9c45-4eea-ab8a-665fc58a2f18"}},{"name":"a4285a20-f20d-4c72-aedb-6df5ac7bb78a.variable","label":"7➛ipaddr","reference_display":"ipaddr","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","child_label":"ipaddr_child0","child_type_label":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","child_type":"string","child_name":"ipaddr_child0","child_uiUniqueId":"f22cc251-8884-419c-a144-32952cc54dcc","uiUniqueId":"36b50a96-d23b-45a3-a1ee-8e7025b1a5d2"}},{"name":"a4285a20-f20d-4c72-aedb-6df5ac7bb78a.variable1","label":"7➛miduser","reference_display":"miduser","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","child_label":"miduser_child0","child_type_label":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","child_type":"string","child_name":"miduser_child0","child_uiUniqueId":"b12ab790-24ba-481c-bee8-76335a0a42ed","uiUniqueId":"114136eb-7483-4504-82c2-593a189038be"}},{"name":"a4285a20-f20d-4c72-aedb-6df5ac7bb78a.variable12","label":"7➛midname","reference_display":"midname","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","child_label":"midname_child0","child_type_label":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","child_type":"string","child_name":"midname_child0","child_uiUniqueId":"ee37f200-6f0f-44f2-90e3-20732992bac6","uiUniqueId":"abf39986-e949-4363-98e7-652db29394dd"}},{"name":"a4285a20-f20d-4c72-aedb-6df5ac7bb78a.variable5","label":"7➛discovery_success","reference_display":"discovery_success","type":"integer","base_type":"integer","attributes":{"uiTypeLabel":"Integer","child_label":"disovery_sucess_child0","child_type_label":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"integer","child_type":"string","child_name":"disovery_sucess_child0","child_uiUniqueId":"cc5e74b8-b65f-41b0-ae40-67e456a00291","uiUniqueId":"67ecefcf-09dc-4821-b376-f75721295846"}},{"name":"a4285a20-f20d-4c72-aedb-6df5ac7bb78a.variable6","label":"7➛status_id","reference_display":"status_id","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","child_label":"status_id_child0","child_type_label":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","child_type":"string","child_name":"status_id_child0","child_uiUniqueId":"346c3b00-0f8f-409a-a691-700de847692d","uiUniqueId":"a87ed6b3-1e18-4f35-a661-3b57060f928b"}},{"name":"a4285a20-f20d-4c72-aedb-6df5ac7bb78a.variable7","label":"7➛iparray","reference_display":"iparray","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"f991f573-9a57-4e48-a8ae-158f36579673"}},{"name":"e5a3e4b8-b6f9-4ffb-8bfb-101fc7e696e5.context","label":"6 - Timeout 45➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"e5a3e4b8-b6f9-4ffb-8bfb-101fc7e696e5.wait_45_ouput","label":"6 - Timeout 45➛Wait 45 ouput","reference_display":"Wait 45 ouput","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"9f0a44f1-a3d5-437a-b77b-6fb01c9207b4"}},{"name":"3286f269-2bb2-41d8-b64f-769e165dba27.variable","label":"11 - MRDS: MRDS Check discovery status 2➛device_status","reference_display":"device_status","type":"array.string","base_type":"array.string","attributes":{"uiTypeLabel":"Array.String","co_type_name":"FDd287a62dfe16e5d0cf4fb9403f84529d","child_label":"device_status_child0","child_type_label":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"array.string","child_type":"string","child_name":"device_status_child0","child_uiUniqueId":"76228c01-3c46-4af7-b5a5-b0ca006afb2c","uiUniqueId":"bc15198e-8c90-419d-8136-95965da2ce29"}},{"name":"3286f269-2bb2-41d8-b64f-769e165dba27.__action_status__","label":"11 - MRDS: MRDS Check discovery status 2➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"014134ca-250e-4a20-adb9-1d6579c89817"}},{"name":"3286f269-2bb2-41d8-b64f-769e165dba27.__dont_treat_as_error__","label":"11 - MRDS: MRDS Check discovery status 2➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"a1595b51-49c4-4f1b-9561-3a6cf93db5bb"}},{"name":"3286f269-2bb2-41d8-b64f-769e165dba27.variable1","label":"11 - MRDS: MRDS Check discovery status 2➛stdid","reference_display":"stdid","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"7d7b1bce-2af9-442a-bd47-b9c0da0bacb0"}},{"name":"3286f269-2bb2-41d8-b64f-769e165dba27.mrdsdevice","label":"11 - MRDS: MRDS Check discovery status 2➛MRDSDevice","reference_display":"MRDSDevice","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"9b778a90-ae87-49d6-8711-bd8acf313913"}},{"name":"3286f269-2bb2-41d8-b64f-769e165dba27.duplicatepresent","label":"11 - MRDS: MRDS Check discovery status 2➛duplicatepresent","reference_display":"duplicatepresent","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"3d189121-2e7e-4011-80ae-0ce9b7a62cd9"}},{"name":"3286f269-2bb2-41d8-b64f-769e165dba27.emptysysid","label":"11 - MRDS: MRDS Check discovery status 2➛emptysysid","reference_display":"emptysysid","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"f84f7b77-ef93-4f05-82af-90133177ece6"}},{"name":"3286f269-2bb2-41d8-b64f-769e165dba27.emptydevice","label":"11 - MRDS: MRDS Check discovery status 2➛emptydevice","reference_display":"emptydevice","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"30f930ec-1670-4c03-86e7-9d726adbc49f"}},{"name":"b59b2b6b-7c08-42b3-acbc-b8789e717e11.status","label":"8 - Submit Catalog Item Request➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"0","order":0.0},{"label":"Error","value":"1","order":1.0},{"label":"Timeout","value":"2","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"eacb2914-9214-441b-ac02-5703c4d8b6ee"}},{"name":"b59b2b6b-7c08-42b3-acbc-b8789e717e11.requested_item","label":"8 - Submit Catalog Item Request➛Requested Item","reference":"sc_req_item","reference_display":"Requested Item","type":"document_id","base_type":"document_id","attributes":{"uiType":"document_id","uiTypeLabel":"Document ID","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"aad3452b-309c-469c-9797-4df9ef6f86be"}},{"name":"b59b2b6b-7c08-42b3-acbc-b8789e717e11.error_message","label":"8 - Submit Catalog Item Request➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"7cf3e70c-55c1-42c4-811a-c6b7ec1692b9"}},{"name":"b59b2b6b-7c08-42b3-acbc-b8789e717e11.__action_status__","label":"8 - Submit Catalog Item Request➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b59b2b6b-7c08-42b3-acbc-b8789e717e11.__dont_treat_as_error__","label":"8 - Submit Catalog Item Request➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"734e2108-d471-4850-9bdf-496a60b80da6.context","label":"9 - MRDS: Create Task for Assignment Group➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"85840620-0c7e-4db2-b6e0-f252b387a748.__action_status__","label":"9 - MRDS: Duplicateipscript 2 after Discovery➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"8d5e3dd7-d8eb-4c33-bf7a-4f16987db49a"}},{"name":"85840620-0c7e-4db2-b6e0-f252b387a748.__dont_treat_as_error__","label":"9 - MRDS: Duplicateipscript 2 after Discovery➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"aeb71fa9-f8e4-4a48-a595-bd695ca44edb"}},{"name":"85840620-0c7e-4db2-b6e0-f252b387a748.duplicateipoutput","label":"9 - MRDS: Duplicateipscript 2 after Discovery➛DuplicateIPoutput","reference_display":"DuplicateIPoutput","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"6ec13d33-4a3a-471d-badb-f74716fd9b67"}},{"name":"85840620-0c7e-4db2-b6e0-f252b387a748.name","label":"9 - MRDS: Duplicateipscript 2 after Discovery➛name","reference_display":"name","type":"array.string","base_type":"array.string","attributes":{"uiTypeLabel":"Array.String","co_type_name":"FD40cdd216f7bc6d906115a2db45c68563","child_label":"name_child0","child_type_label":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"array.string","child_type":"string","child_name":"name_child0","child_uiUniqueId":"ae60a57a-1777-4683-a7ce-21f9a25204e7","uiUniqueId":"37e0b9f2-2d2e-4223-86bf-ec41be71694c"}},{"name":"85840620-0c7e-4db2-b6e0-f252b387a748.serial_number","label":"9 - MRDS: Duplicateipscript 2 after Discovery➛serial_number","reference_display":"serial_number","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"eb0bc184-df0f-4cf3-8c6f-155974331c00"}},{"name":"85840620-0c7e-4db2-b6e0-f252b387a748.ip_address","label":"9 - MRDS: Duplicateipscript 2 after Discovery➛ip_address","reference_display":"ip_address","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"337d31f4-8822-41cf-80e8-fc3cdd05c9fb"}},{"name":"85840620-0c7e-4db2-b6e0-f252b387a748.count","label":"9 - MRDS: Duplicateipscript 2 after Discovery➛count","reference_display":"count","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"5a17016b-683d-4322-bd2f-4d6808a6c789"}},{"name":"85840620-0c7e-4db2-b6e0-f252b387a748.duplicateipoutputserver","label":"9 - MRDS: Duplicateipscript 2 after Discovery➛DuplicateIPoutput Server","reference_display":"DuplicateIPoutput Server","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"38272cad-4e0c-4a1d-b121-041a6d9dab6d"}},{"name":"85840620-0c7e-4db2-b6e0-f252b387a748.ip_address_netgear","label":"9 - MRDS: Duplicateipscript 2 after Discovery➛ip_address_netgear","reference_display":"ip_address_netgear","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"959f85f9-d80a-4bf6-a99b-b73c5575447e"}},{"name":"35a40f94-1f47-415c-95fc-2bd9d6ba6e98.message","label":"15 - MRDS: Discovery Log➛message","reference_display":"message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"960ddc71-0be3-43ba-9801-b18dc6f13ecb"}},{"name":"35a40f94-1f47-415c-95fc-2bd9d6ba6e98.deviceid","label":"15 - MRDS: Discovery Log➛deviceid","reference_display":"deviceid","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"ec8bbe7e-8d87-4865-a831-c1b50c5c27de"}},{"name":"35a40f94-1f47-415c-95fc-2bd9d6ba6e98.__action_status__","label":"15 - MRDS: Discovery Log➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"92e19c41-aeae-4cd0-949f-0f4e7c08f1d9"}},{"name":"35a40f94-1f47-415c-95fc-2bd9d6ba6e98.__dont_treat_as_error__","label":"15 - MRDS: Discovery Log➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"6d6519a3-b3c0-4fdd-ab9b-1a001567565a"}},{"name":"2fbc2c1a-e608-4678-be81-f1b424fb2829.status","label":"16 - Submit Catalog Item Request➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"0","order":0.0},{"label":"Error","value":"1","order":1.0},{"label":"Timeout","value":"2","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"eacb2914-9214-441b-ac02-5703c4d8b6ee"}},{"name":"2fbc2c1a-e608-4678-be81-f1b424fb2829.requested_item","label":"16 - Submit Catalog Item Request➛Requested Item","reference":"sc_req_item","reference_display":"Requested Item","type":"document_id","base_type":"document_id","attributes":{"uiType":"document_id","uiTypeLabel":"Document ID","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"aad3452b-309c-469c-9797-4df9ef6f86be"}},{"name":"2fbc2c1a-e608-4678-be81-f1b424fb2829.error_message","label":"16 - Submit Catalog Item Request➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"7cf3e70c-55c1-42c4-811a-c6b7ec1692b9"}},{"name":"2fbc2c1a-e608-4678-be81-f1b424fb2829.__action_status__","label":"16 - Submit Catalog Item Request➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2fbc2c1a-e608-4678-be81-f1b424fb2829.__dont_treat_as_error__","label":"16 - Submit Catalog Item Request➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f4b20dbe-b897-419e-8156-e1164557800b.context","label":"18 - MRDS: Create Task for Assignment Group➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"88a58abe-00a8-4116-a3ff-a1b1cd45b099.sys_id_task","label":"2 - MRDS: SG Create Task➛sys_id_task","reference_display":"sys_id_task","type":"GUID","base_type":"GUID","attributes":{"uiType":"GUID","uiTypeLabel":"Sys ID (GUID)","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"9c04a46b-21fc-4ceb-ade9-2412d8834b82"}},{"name":"3286f269-2bb2-41d8-b64f-769e165dba27.task_sys","label":"11 - MRDS: MRDS Check discovery status 2➛task_sys","reference_display":"task_sys","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"e70361b9-82dd-40fe-9274-c986f7ca391c"}},{"name":"710e89fe-07d6-4d91-9793-bd15779098c5.task_sys","label":"8 - MRDS; Duplicatescript after discovery 2➛task_sys","reference_display":"task_sys","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"c9fe8dae-a0d3-4954-9ab4-3e5d9359ef82"}},{"name":"710e89fe-07d6-4d91-9793-bd15779098c5.task_sys_netgear","label":"8 - MRDS; Duplicatescript after discovery 2➛task_sys_netgear","reference_display":"task_sys_netgear","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"4d093705-3c63-4e18-8bc8-358b1cb279a2"}},{"name":"2fbc2c1a-e608-4678-be81-f1b424fb2829.requested_item.sys_id","label":"16 - Submit Catalog Item Request➛Requested Item➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sc_req_item","column_name":"sys_id"},{"name":"9e1e686c-45d9-4575-af04-8d1718cee3ec.sys_id_cmdb","label":"1 - MRDS:No ips➛sys_id_cmdb_server","reference_display":"sys_id_cmdb_server","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"d73c197b-c753-407e-b7b6-b515402f70cc"}},{"name":"9e1e686c-45d9-4575-af04-8d1718cee3ec.sys_id_cmdb_netgear","label":"1 - MRDS:No ips➛sys_id_cmdb_netgear","reference_display":"sys_id_cmdb_netgear","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"b5f3f26c-f551-4169-a3ef-8cf29d1fae8d"}},{"name":"9cbe38e9-3461-46d1-b6d9-59e9f5cd37af.task_sys_server","label":"12 - MRDS: Duplicatesv2 after Discovery➛task sys server","reference_display":"task sys server","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"b06fcdaa-1076-4056-8545-e96a096938fe"}},{"name":"c0eed91b-de25-42ff-8548-758982a8c8eb.ipout","label":"6 - MRDS:Arrary to String Ip➛ipout","reference_display":"ipout","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"1b543e56-75dd-4f89-a643-053cfcf5754a"}},{"name":"0c83c9f0-bbea-4d2f-a35a-f32330a98c97.sys_id_cmdb_server","label":"1 - MRDS: No ipaddress➛sys_id_cmdb_server","reference_display":"sys_id_cmdb_server","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"f1166c2a-9cd3-43a5-934d-508c06c259b1"}},{"name":"c724eb21-1186-4785-989a-07067a7126b2.ip_address_server","label":"1 - MRDS:Duplicatescriptip➛ip_address_server","reference_display":"ip_address_server","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"34c466c4-ac76-4931-89db-5ca75134b3ef"}},{"name":"c724eb21-1186-4785-989a-07067a7126b2.device_sys_server","label":"1 - MRDS:Duplicatescriptip➛device_sys_server","reference_display":"device_sys_server","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"f59183f4-4d38-4b3e-895c-d7df43a0b8dc"}},{"name":"a4285a20-f20d-4c72-aedb-6df5ac7bb78a.status_id","label":"7 - MRDS: MRDS Discovery Action➛status_id","reference_display":"status_id","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"899cb3fb-d5f9-4460-8b55-b53b4fa1fcbd"}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>MRDS Test for App</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6c0abf3f9798f11036a230d3f153af0b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>MRDS Test for App</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Application 1" source="x_909790_applicati">3f3b77619714b11036a230d3f153af4d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Application 1">3f3b77619714b11036a230d3f153af4d</sys_scope>
+        <sys_update_name>sys_hub_flow_6c0abf3f9798f11036a230d3f153af0b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:47</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=6c0abf3f9798f11036a230d3f153af0b"/>
+    <sys_variable_value action="delete_multiple" query="document_key=6c0abf3f9798f11036a230d3f153af0b"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=6c0abf3f9798f11036a230d3f153af0b^sys_idNOT IN810abf3f9798f11036a230d3f153aff3"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment>Triggers weekly on Sunday at 12 pm IST</comment>
+        <display_text/>
+        <flow display_value="MRDS Test for App">6c0abf3f9798f11036a230d3f153af0b</flow>
+        <name>Weekly</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:46</sys_created_on>
+        <sys_id>810abf3f9798f11036a230d3f153aff3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:46</sys_updated_on>
+        <trigger_definition display_value="Weekly">cf352104c32222002841b63b12d3ae1f</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>weekly</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=810abf3f9798f11036a230d3f153aff3"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>810abf3f9798f11036a230d3f153aff3</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:46</sys_created_on>
+        <sys_id>010abf3f9798f11036a230d3f153aff5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:46</sys_updated_on>
+        <value>1970-01-01 12:00:00</value>
+        <variable display_value="Time">a745a104c32222002841b63b12d3ae18</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>810abf3f9798f11036a230d3f153aff3</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:46</sys_created_on>
+        <sys_id>c10abf3f9798f11036a230d3f153aff5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:46</sys_updated_on>
+        <value>7</value>
+        <variable display_value="Day of Week">c685a104c32222002841b63b12d3aed3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_input_cf352104c32222002841b63b12d3ae1f^id=810abf3f9798f11036a230d3f153aff3"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=6c0abf3f9798f11036a230d3f153af0b"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=6c0abf3f9798f11036a230d3f153af0b^sys_idNOT INac0abf3f9798f11036a230d3f153af0e"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>6c0abf3f9798f11036a230d3f153af0b</id>
+        <name>MRDS Test for App</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:44</sys_created_on>
+        <sys_id>ac0abf3f9798f11036a230d3f153af0e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:44</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=ac0abf3f9798f11036a230d3f153af0e"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=6c0abf3f9798f11036a230d3f153af0b"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=6c0abf3f9798f11036a230d3f153af0b"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=6c0abf3f9798f11036a230d3f153af0b"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=6c0abf3f9798f11036a230d3f153af0b^sys_idNOT IN7c0abf3f9798f11036a230d3f153af9f,850abf3f9798f11036a230d3f153aff1,8d0abf3f9798f11036a230d3f153afb6,8d0abf3f9798f11036a230d3f153afc9,8d0abf3f9798f11036a230d3f153afe3,b40abf3f9798f11036a230d3f153af8e,b40abf3f9798f11036a230d3f153afaa,b80abf3f9798f11036a230d3f153af97,c50abf3f9798f11036a230d3f153afc0,c90abf3f9798f11036a230d3f153afd7,f40abf3f9798f11036a230d3f153af81"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="MRDS:Arrary to String Ip">1cfe67101ba22d94648feb17624bcbd4</action_type>
+        <action_type_parent display_value="MRDS:Arrary to String Ip">22fd27981b622d94648feb17624bcbdb</action_type_parent>
+        <comment>Changing IP address variable to Strng type from array</comment>
+        <compiled_snapshot>1cfe67101ba22d94648feb17624bcbd4</compiled_snapshot>
+        <display_text/>
+        <flow display_value="MRDS Test for App">6c0abf3f9798f11036a230d3f153af0b</flow>
+        <order>6</order>
+        <parent_ui_id>74aee0ce-bc37-40c0-a34f-e13c6c70bb53</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:45</sys_created_on>
+        <sys_id>7c0abf3f9798f11036a230d3f153af9f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Application 1">3f3b77619714b11036a230d3f153af4d</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:45</sys_updated_on>
+        <ui_id>c0eed91b-de25-42ff-8548-758982a8c8eb</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=7c0abf3f9798f11036a230d3f153af9f"/>
+    <sys_element_mapping action="delete_multiple" query="id=7c0abf3f9798f11036a230d3f153af9f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>iparr</field>
+        <id>7c0abf3f9798f11036a230d3f153af9f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:45</sys_created_on>
+        <sys_id>fc0abf3f9798f11036a230d3f153afa0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:45</sys_updated_on>
+        <table>var__m_sys_hub_action_input_1cfe67101ba22d94648feb17624bcbd4</table>
+        <value>{{74aee0ce-bc37-40c0-a34f-e13c6c70bb53.item}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7c0abf3f9798f11036a230d3f153af9f"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7c0abf3f9798f11036a230d3f153af9f"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="MRDS: Total cis for team 2">03ecee791b32ed50648feb17624bcbdc</action_type>
+        <action_type_parent display_value="MRDS: Total cis for team 2">e25cae311b32ed50648feb17624bcb88</action_type_parent>
+        <comment>Information about total tasks created in reconcile_duplicate_tasks for duplicates and tasks created for Failed discovery devices in sc_req_item</comment>
+        <compiled_snapshot>03ecee791b32ed50648feb17624bcbdc</compiled_snapshot>
+        <display_text/>
+        <flow display_value="MRDS Test for App">6c0abf3f9798f11036a230d3f153af0b</flow>
+        <order>19</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:46</sys_created_on>
+        <sys_id>850abf3f9798f11036a230d3f153aff1</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Application 1">3f3b77619714b11036a230d3f153af4d</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:46</sys_updated_on>
+        <ui_id>2f865d15-c62a-4166-a68c-e46db2281f2b</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=850abf3f9798f11036a230d3f153aff1"/>
+    <sys_element_mapping action="delete_multiple" query="id=850abf3f9798f11036a230d3f153aff1"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>task_sys_id_2</field>
+        <id>850abf3f9798f11036a230d3f153aff1</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:46</sys_created_on>
+        <sys_id>890abf3f9798f11036a230d3f153aff2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:46</sys_updated_on>
+        <table>var__m_sys_hub_action_input_03ecee791b32ed50648feb17624bcbdc</table>
+        <value>{{9cbe38e9-3461-46d1-b6d9-59e9f5cd37af.task_sys_server}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>task_sys_id_3</field>
+        <id>850abf3f9798f11036a230d3f153aff1</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:46</sys_created_on>
+        <sys_id>4d0abf3f9798f11036a230d3f153aff2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:46</sys_updated_on>
+        <table>var__m_sys_hub_action_input_03ecee791b32ed50648feb17624bcbdc</table>
+        <value>{{2fbc2c1a-e608-4678-be81-f1b424fb2829.requested_item.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=850abf3f9798f11036a230d3f153aff1"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=850abf3f9798f11036a230d3f153aff1"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="MRDS: MRDS Check discovery status 2">58520e0e9763111036a230d3f153af6e</action_type>
+        <action_type_parent display_value="MRDS: MRDS Check discovery status 2">88320a0e9763111036a230d3f153af84</action_type_parent>
+        <comment>Check for devices which got discovered successfully and failure with Status id  as input from Discovery action.</comment>
+        <compiled_snapshot>58520e0e9763111036a230d3f153af6e</compiled_snapshot>
+        <display_text/>
+        <flow display_value="MRDS Test for App">6c0abf3f9798f11036a230d3f153af0b</flow>
+        <order>11</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:46</sys_created_on>
+        <sys_id>8d0abf3f9798f11036a230d3f153afb6</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Application 1">3f3b77619714b11036a230d3f153af4d</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:46</sys_updated_on>
+        <ui_id>06d40c8b-bfd3-4369-9c69-08edb794d67c</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=8d0abf3f9798f11036a230d3f153afb6"/>
+    <sys_element_mapping action="delete_multiple" query="id=8d0abf3f9798f11036a230d3f153afb6"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ip_address</field>
+        <id>8d0abf3f9798f11036a230d3f153afb6</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:46</sys_created_on>
+        <sys_id>050abf3f9798f11036a230d3f153afb8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:46</sys_updated_on>
+        <table>var__m_sys_hub_action_input_58520e0e9763111036a230d3f153af6e</table>
+        <value>{{flow_variable.discovery_ip}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>statusid</field>
+        <id>8d0abf3f9798f11036a230d3f153afb6</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:46</sys_created_on>
+        <sys_id>890abf3f9798f11036a230d3f153afb8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:46</sys_updated_on>
+        <table>var__m_sys_hub_action_input_58520e0e9763111036a230d3f153af6e</table>
+        <value>{{flow_variable.discovery_statusid}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sysid_of_device</field>
+        <id>8d0abf3f9798f11036a230d3f153afb6</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:46</sys_created_on>
+        <sys_id>c50abf3f9798f11036a230d3f153afb8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:46</sys_updated_on>
+        <table>var__m_sys_hub_action_input_58520e0e9763111036a230d3f153af6e</table>
+        <value>{{c724eb21-1186-4785-989a-07067a7126b2.device_sys_server}}{{b720f85a-f843-49e6-b769-1996a26a8cc2.sys_id_cmdb}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=8d0abf3f9798f11036a230d3f153afb6"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=8d0abf3f9798f11036a230d3f153afb6"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="MRDS: Discovery Log">5f299b6097b7111036a230d3f153af90</action_type>
+        <action_type_parent display_value="MRDS: Discovery Log">bc164fe49737111036a230d3f153af87</action_type_parent>
+        <comment>Provide Logs of Failed device.</comment>
+        <compiled_snapshot>5f299b6097b7111036a230d3f153af90</compiled_snapshot>
+        <display_text/>
+        <flow display_value="MRDS Test for App">6c0abf3f9798f11036a230d3f153af0b</flow>
+        <order>15</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:46</sys_created_on>
+        <sys_id>8d0abf3f9798f11036a230d3f153afc9</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Application 1">3f3b77619714b11036a230d3f153af4d</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:46</sys_updated_on>
+        <ui_id>35a40f94-1f47-415c-95fc-2bd9d6ba6e98</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=8d0abf3f9798f11036a230d3f153afc9"/>
+    <sys_element_mapping action="delete_multiple" query="id=8d0abf3f9798f11036a230d3f153afc9"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>device_sys_id</field>
+        <id>8d0abf3f9798f11036a230d3f153afc9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:46</sys_created_on>
+        <sys_id>cd0abf3f9798f11036a230d3f153afcb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:46</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5f299b6097b7111036a230d3f153af90</table>
+        <value>{{c724eb21-1186-4785-989a-07067a7126b2.device_sys_server}}{{b720f85a-f843-49e6-b769-1996a26a8cc2.sys_id_cmdb}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ip_address</field>
+        <id>8d0abf3f9798f11036a230d3f153afc9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:46</sys_created_on>
+        <sys_id>490abf3f9798f11036a230d3f153afcb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:46</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5f299b6097b7111036a230d3f153af90</table>
+        <value>{{flow_variable.discovery_ip}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>notconsiderip</field>
+        <id>8d0abf3f9798f11036a230d3f153afc9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:46</sys_created_on>
+        <sys_id>850abf3f9798f11036a230d3f153afcb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:46</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5f299b6097b7111036a230d3f153af90</table>
+        <value>{{d5a2cc2f-3cd2-4296-bf83-e31f7cbed0fc.notconsiderip}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>statusid</field>
+        <id>8d0abf3f9798f11036a230d3f153afc9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:46</sys_created_on>
+        <sys_id>0d0abf3f9798f11036a230d3f153afcb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:46</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5f299b6097b7111036a230d3f153af90</table>
+        <value>{{flow_variable.discovery_statusid}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=8d0abf3f9798f11036a230d3f153afc9"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=8d0abf3f9798f11036a230d3f153afc9"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="MRDS Test for App">6c0abf3f9798f11036a230d3f153af0b</flow>
+        <order>17</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:46</sys_created_on>
+        <sys_id>8d0abf3f9798f11036a230d3f153afe3</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Application 1">3f3b77619714b11036a230d3f153af4d</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:46</sys_updated_on>
+        <ui_id>101778ab-e4c2-4630-88aa-83acedf10e26</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=8d0abf3f9798f11036a230d3f153afe3"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>8d0abf3f9798f11036a230d3f153afe3</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:46</sys_created_on>
+        <sys_id>cd0abf3f9798f11036a230d3f153afe5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:46</sys_updated_on>
+        <value>sc_task</value>
+        <variable display_value="Table">d909f99587003300663ca1bb36cb0ba4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=8d0abf3f9798f11036a230d3f153afe3"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>8d0abf3f9798f11036a230d3f153afe3</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:46</sys_created_on>
+        <sys_id>890abf3f9798f11036a230d3f153afe5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:46</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value>request_item={{2fbc2c1a-e608-4678-be81-f1b424fb2829.requested_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>8d0abf3f9798f11036a230d3f153afe3</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:46</sys_created_on>
+        <sys_id>4d0abf3f9798f11036a230d3f153afe5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:46</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=8d0abf3f9798f11036a230d3f153afe3"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=8d0abf3f9798f11036a230d3f153afe3"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="MRDS: Last 30 days with ip address">f2d242041b2ea194648feb17624bcb46</action_type>
+        <action_type_parent display_value="MRDS: Last 30 days with ip address">335fb9881b6aa194648feb17624bcbd2</action_type_parent>
+        <comment>Check for CIs in cmdb_ci__win_ server with IP address and Most recent discovery is at or before 30 days and Install status is Installed</comment>
+        <compiled_snapshot>f2d242041b2ea194648feb17624bcb46</compiled_snapshot>
+        <display_text/>
+        <flow display_value="MRDS Test for App">6c0abf3f9798f11036a230d3f153af0b</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:45</sys_created_on>
+        <sys_id>b40abf3f9798f11036a230d3f153af8e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Application 1">3f3b77619714b11036a230d3f153af4d</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:45</sys_updated_on>
+        <ui_id>b720f85a-f843-49e6-b769-1996a26a8cc2</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b40abf3f9798f11036a230d3f153af8e"/>
+    <sys_element_mapping action="delete_multiple" query="id=b40abf3f9798f11036a230d3f153af8e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ip_address_dup</field>
+        <id>b40abf3f9798f11036a230d3f153af8e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:45</sys_created_on>
+        <sys_id>380abf3f9798f11036a230d3f153af8f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:45</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f2d242041b2ea194648feb17624bcb46</table>
+        <value>{{c724eb21-1186-4785-989a-07067a7126b2.ip_address_server}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b40abf3f9798f11036a230d3f153af8e"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b40abf3f9798f11036a230d3f153af8e"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="MRDS: MRDS Discovery Action">34ab18fc97bb111036a230d3f153af01</action_type>
+        <action_type_parent display_value="MRDS: MRDS Discovery Action">4a5b50fc97bb111036a230d3f153afa1</action_type_parent>
+        <comment>Discovery of devices will takes place with input as IP Address and output is sys_id of discovery_status table</comment>
+        <compiled_snapshot>34ab18fc97bb111036a230d3f153af01</compiled_snapshot>
+        <display_text/>
+        <flow display_value="MRDS Test for App">6c0abf3f9798f11036a230d3f153af0b</flow>
+        <order>7</order>
+        <parent_ui_id>74aee0ce-bc37-40c0-a34f-e13c6c70bb53</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:46</sys_created_on>
+        <sys_id>b40abf3f9798f11036a230d3f153afaa</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Application 1">3f3b77619714b11036a230d3f153af4d</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:46</sys_updated_on>
+        <ui_id>a4285a20-f20d-4c72-aedb-6df5ac7bb78a</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b40abf3f9798f11036a230d3f153afaa"/>
+    <sys_element_mapping action="delete_multiple" query="id=b40abf3f9798f11036a230d3f153afaa"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ipadresses</field>
+        <id>b40abf3f9798f11036a230d3f153afaa</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:46</sys_created_on>
+        <sys_id>380abf3f9798f11036a230d3f153afab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:46</sys_updated_on>
+        <table>var__m_sys_hub_action_input_34ab18fc97bb111036a230d3f153af01</table>
+        <value>{{c0eed91b-de25-42ff-8548-758982a8c8eb.ipout}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b40abf3f9798f11036a230d3f153afaa"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b40abf3f9798f11036a230d3f153afaa"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="MRDS: Split">dfd55b981be6e994648feb17624bcba7</action_type>
+        <action_type_parent display_value="MRDS: Split">9cb9d2d41b62a994648feb17624bcb73</action_type_parent>
+        <comment>Takking IP Address from both the duplicatescript and Last 30 days with IP address and split in chunks of 1000 ip address and store it in an array</comment>
+        <compiled_snapshot>dfd55b981be6e994648feb17624bcba7</compiled_snapshot>
+        <display_text/>
+        <flow display_value="MRDS Test for App">6c0abf3f9798f11036a230d3f153af0b</flow>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:45</sys_created_on>
+        <sys_id>b80abf3f9798f11036a230d3f153af97</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Application 1">3f3b77619714b11036a230d3f153af4d</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:45</sys_updated_on>
+        <ui_id>b85314a2-f44c-48ff-8a76-11071ee9c309</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b80abf3f9798f11036a230d3f153af97"/>
+    <sys_element_mapping action="delete_multiple" query="id=b80abf3f9798f11036a230d3f153af97"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ip</field>
+        <id>b80abf3f9798f11036a230d3f153af97</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:45</sys_created_on>
+        <sys_id>3c0abf3f9798f11036a230d3f153af98</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:45</sys_updated_on>
+        <table>var__m_sys_hub_action_input_dfd55b981be6e994648feb17624bcba7</table>
+        <value>{{c724eb21-1186-4785-989a-07067a7126b2.ip_address_server}}{{b720f85a-f843-49e6-b769-1996a26a8cc2.ip_address}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b80abf3f9798f11036a230d3f153af97"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b80abf3f9798f11036a230d3f153af97"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="MRDS: Duplicatesv2 after Discovery">aa88a2e91b56e5d075ea5208624bcb52</action_type>
+        <action_type_parent display_value="MRDS: Duplicatesv2 after Discovery">a6ced2ed1b92e5d075ea5208624bcb6f</action_type_parent>
+        <comment>Create task in reconcile_duplicate_task table for duplicate CIs based on IP Address</comment>
+        <compiled_snapshot>aa88a2e91b56e5d075ea5208624bcb52</compiled_snapshot>
+        <display_text/>
+        <flow display_value="MRDS Test for App">6c0abf3f9798f11036a230d3f153af0b</flow>
+        <order>12</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:46</sys_created_on>
+        <sys_id>c50abf3f9798f11036a230d3f153afc0</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Application 1">3f3b77619714b11036a230d3f153af4d</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:46</sys_updated_on>
+        <ui_id>9cbe38e9-3461-46d1-b6d9-59e9f5cd37af</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c50abf3f9798f11036a230d3f153afc0"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c50abf3f9798f11036a230d3f153afc0"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c50abf3f9798f11036a230d3f153afc0"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Submit Catalog Item Request">c7a04c607312001098e194596bf6a72a</action_type>
+        <action_type_parent display_value="Submit Catalog Item Request">bfb5ea807312001098e194596bf6a707</action_type_parent>
+        <comment>Create RITM and SCTASK to provide Discover Logs of devices with failure to discover.</comment>
+        <compiled_snapshot>c7a04c607312001098e194596bf6a72a</compiled_snapshot>
+        <display_text/>
+        <flow display_value="MRDS Test for App">6c0abf3f9798f11036a230d3f153af0b</flow>
+        <order>16</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:46</sys_created_on>
+        <sys_id>c90abf3f9798f11036a230d3f153afd7</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Application 1">3f3b77619714b11036a230d3f153af4d</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:46</sys_updated_on>
+        <ui_id>2fbc2c1a-e608-4678-be81-f1b424fb2829</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c90abf3f9798f11036a230d3f153afd7"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c90abf3f9798f11036a230d3f153afd7</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:46</sys_created_on>
+        <sys_id>0d0abf3f9798f11036a230d3f153afda</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:46</sys_updated_on>
+        <value>{"inputs":[{"id":"eabfe8f21be1f4541f89ebd3604bcb27","label":"Requested By","name":"requested_by","type":"reference","type_label":"Reference","order":0,"extended":false,"mandatory":false,"readonly":false,"maxsize":0,"children":[],"data_structure":"","reference":"sys_user","reference_display":"User","ref_qual":"","choiceOption":"","table":"item_option_new","columnName":"","defaultValue":"{\"display\":\"Vijaykumar Kurahatti\",\"value\":\"8aac86c41b1370dc8fb75425604bcbd6\"}","defaultDisplayValue":"","use_dependent":false,"dependent_on":"","internal_link":"","show_ref_finder":false,"local":false,"attributes":{"catalogType":"8","catalogTypeLabel":"Reference","fd_hide_inline_script_widget":"true"},"sys_class_name":"","canDrop":true,"field_name":"requested_by","value":"{\"display\":\"Vijaykumar Kurahatti\",\"value\":\"8aac86c41b1370dc8fb75425604bcbd6\",\"table\":\"sys_user\",\"sys_id\":\"8aac86c41b1370dc8fb75425604bcbd6\"}"},{"id":"b47030b61be1f4541f89ebd3604bcb6e","label":"Requested For (Customer)","name":"requested_for","type":"reference","type_label":"Reference","order":0,"extended":false,"mandatory":true,"readonly":false,"maxsize":0,"children":[],"data_structure":"","reference":"sys_user","reference_display":"User","ref_qual":"active=true^EQ","choiceOption":"","table":"item_option_new","columnName":"","defaultValue":"{\"display\":\"Vijaykumar Kurahatti\",\"value\":\"8aac86c41b1370dc8fb75425604bcbd6\"}","defaultDisplayValue":"","use_dependent":false,"dependent_on":"","internal_link":"","show_ref_finder":false,"local":false,"attributes":{"catalogType":"8","catalogTypeLabel":"Reference","fd_hide_inline_script_widget":"true"},"sys_class_name":"","canDrop":true,"field_name":"requested_for","value":"{\"display\":\"Vijaykumar Kurahatti\",\"value\":\"8aac86c41b1370dc8fb75425604bcbd6\",\"table\":\"sys_user\",\"sys_id\":\"8aac86c41b1370dc8fb75425604bcbd6\"}"},{"id":"a351fc3a1be1f4541f89ebd3604bcbbb","label":"Select Company ","name":"company_name","type":"reference","type_label":"Reference","order":0,"extended":false,"mandatory":true,"readonly":false,"maxsize":0,"children":[],"data_structure":"","reference":"core_company","reference_display":"Company","ref_qual":"nameINUnisys ES,Unisys TP,Unisys UIT^EQ","choiceOption":"","table":"item_option_new","columnName":"","defaultValue":"{\"display\":\"\",\"value\":\"\"}","defaultDisplayValue":"","use_dependent":false,"dependent_on":"","internal_link":"","show_ref_finder":false,"local":false,"attributes":{"catalogType":"8","catalogTypeLabel":"Reference","fd_hide_inline_script_widget":"true"},"sys_class_name":"","canDrop":true,"field_name":"company_name","value":"{\"display\":\"Unisys ES\",\"value\":\"bae663dadbecdf84a5466ac2ca961918\",\"table\":\"core_company\",\"sys_id\":\"bae663dadbecdf84a5466ac2ca961918\"}"},{"id":"34d2383e1be1f4541f89ebd3604bcbf0","label":"Data Management Type","name":"data_type","type":"choice","type_label":"Choice","order":0,"extended":false,"mandatory":true,"readonly":false,"maxsize":0,"children":[],"data_structure":"","reference":"","reference_display":"","ref_qual":"","choices":[{"label":"-- None --","value":"","order":100},{"label":"Scan Device(s) by ServiceNow Discovery to update CMDB","value":"Scan Device(s) by ServiceNow Discovery to update CMDB","order":100},{"label":"Create/Update/Delete ServiceNow Discovery Schedule","value":"Create/Update/Delete ServiceNow Discovery Schedule","order":100},{"label":"Add/Exclude Network Subnet(s) from ServiceNow Discovery Schedule","value":"Add/Exclude Network Subnet(s) from ServiceNow Discovery Schedule","order":100},{"label":"Create/Update/Modify Location Details in Discovery Schedules","value":"Create/Update/Modify Location Details in Discovery Schedules","order":100},{"label":"Add/Amend Cloud Subscription/Account for ServiceNow Cloud Discovery","value":"Add/Amend Cloud Subscription/Account for ServiceNow Cloud Discovery","order":100},{"label":"Add/Disable Discovery Credentials","value":"Add/Disable Discovery Credentials","order":100},{"label":"Add/Amend SNMP OID for Discovery of Network Device","value":"Add/Amend SNMP OID for Discovery of Network Device","order":100},{"label":"Add/Amend Discovery/Mid Server Properties","value":"Add/Amend Discovery/Mid Server Properties","order":100},{"label":"Create Custom/Update existing Discovery Probe/Classifier","value":"Create Custom/Update existing Discovery Probe/Classifier","order":100},{"label":"Create Custom/Update existing Pattern/Sensor","value":"Create Custom/Update existing Pattern/Sensor","order":100},{"label":"Submit Update set/ServiceNow Discovery Fixes","value":"Submit Update set/ServiceNow Discovery Fixes","order":100},{"label":"Install ServiceNow Discovery Mid Server","value":"Install ServiceNow Discovery Mid Server","order":100},{"label":"Decommission/Invalidate Mid Server","value":"Decommission/Invalidate Mid Server","order":100},{"label":"Decommission ServiceNow Discovery for Client","value":"Decommission ServiceNow Discovery for Client","order":100},{"label":"Install/Upgrade Discovery Plugins","value":"Install/Upgrade Discovery Plugins","order":100},{"label":"Reconciliation of CI's discovered in CMDB","value":"Reconciliation of CI's discovered in CMDB","order":100},{"label":"Remediate \"Most Recent Discovery\" date for CI's not scanned recently","value":"Remediate \"Most Recent Discovery\" date for CI's not scanned recently","order":100},{"label":"Other","value":"Other","order":100}],"choiceOption":"","table":"item_option_new","columnName":"","defaultValue":"","defaultDisplayValue":"","use_dependent":false,"dependent_on":"","internal_link":"","show_ref_finder":false,"local":false,"attributes":{"catalogType":"5","catalogTypeLabel":"Select Box","fd_hide_inline_script_widget":"true"},"sys_class_name":"","canDrop":true,"field_name":"data_type","value":"Other"},{"id":"672634761b25f4541f89ebd3604bcbc9","label":"Request Description in Summary","name":"summary_description","type":"string","type_label":"String","order":0,"extended":false,"mandatory":true,"readonly":false,"maxsize":0,"children":[],"data_structure":"","reference":"","reference_display":"","ref_qual":"","choiceOption":"","table":"item_option_new","columnName":"","defaultValue":"","defaultDisplayValue":"","use_dependent":false,"dependent_on":"","internal_link":"","show_ref_finder":false,"local":false,"attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text","fd_hide_inline_script_widget":"true"},"sys_class_name":"","canDrop":true,"field_name":"summary_description","value":"MRDS: Discovery Failed: Investigate the Reason Given in Worknotes"},{"id":"e9d6343e1b25f4541f89ebd3604bcb38","label":"Detailed Description","name":"request_description","type":"multi_small","type_label":"Multiple Line Small Text Area","order":0,"extended":false,"mandatory":true,"readonly":false,"maxsize":0,"children":[],"data_structure":"","reference":"","reference_display":"","ref_qual":"","choiceOption":"","table":"item_option_new","columnName":"","defaultValue":"","defaultDisplayValue":"","use_dependent":false,"dependent_on":"","internal_link":"","show_ref_finder":false,"local":false,"attributes":{"catalogType":"2","catalogTypeLabel":"Multi Line Text","fd_hide_inline_script_widget":"true"},"sys_class_name":"","canDrop":true,"field_name":"request_description","value":"MRDS: Discovery Failed: Investigate the Reason Given in Worknotes"},{"id":"1d587c321b65f4541f89ebd3604bcb79","label":"Project Code","name":"project_code","type":"string","type_label":"String","order":0,"extended":false,"mandatory":false,"readonly":false,"maxsize":0,"children":[],"data_structure":"","reference":"","reference_display":"","ref_qual":"","choiceOption":"","table":"item_option_new","columnName":"","defaultValue":"","defaultDisplayValue":"","use_dependent":false,"dependent_on":"","internal_link":"","show_ref_finder":false,"local":false,"attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text","fd_hide_inline_script_widget":"true"},"sys_class_name":"","canDrop":true,"field_name":"project_code","value":""},{"id":"ccf8fcf21b65f4541f89ebd3604bcbfa","label":"Additional Comments:","name":"additional_comments","type":"multi_small","type_label":"Multiple Line Small Text Area","order":0,"extended":false,"mandatory":false,"readonly":false,"maxsize":0,"children":[],"data_structure":"","reference":"","reference_display":"","ref_qual":"","choiceOption":"","table":"item_option_new","columnName":"","defaultValue":"","defaultDisplayValue":"","use_dependent":false,"dependent_on":"","internal_link":"","show_ref_finder":false,"local":false,"attributes":{"catalogType":"2","catalogTypeLabel":"Multi Line Text","fd_hide_inline_script_widget":"true"},"sys_class_name":"","canDrop":true,"field_name":"additional_comments","value":""}]}</value>
+        <variable display_value="Catalog Item Inputs">0fa04c607312001098e194596bf6a731</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c90abf3f9798f11036a230d3f153afd7</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:46</sys_created_on>
+        <sys_id>490abf3f9798f11036a230d3f153afda</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:46</sys_updated_on>
+        <value>1970-01-01 00:00:00</value>
+        <variable display_value="Duration">4963be657383001098e194596bf6a736</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c90abf3f9798f11036a230d3f153afd7</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:46</sys_created_on>
+        <sys_id>cd0abf3f9798f11036a230d3f153afda</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:46</sys_updated_on>
+        <value>d83ea87e1ba1f4541f89ebd3604bcbe3</value>
+        <variable display_value="Catalog Item">0ba04c607312001098e194596bf6a72b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_c7a04c607312001098e194596bf6a72a^id=c90abf3f9798f11036a230d3f153afd7"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c90abf3f9798f11036a230d3f153afd7"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c90abf3f9798f11036a230d3f153afd7"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="MRDS:Duplicatescriptip">33cbbf601b6a65d4648feb17624bcb05</action_type>
+        <action_type_parent display_value="MRDS:Duplicatescriptip">018a3f641b2a65d4648feb17624bcb8f</action_type_parent>
+        <comment>Identify the Duplicate IPs in order not to run discovery multiple times</comment>
+        <compiled_snapshot>33cbbf601b6a65d4648feb17624bcb05</compiled_snapshot>
+        <display_text/>
+        <flow display_value="MRDS Test for App">6c0abf3f9798f11036a230d3f153af0b</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:45</sys_created_on>
+        <sys_id>f40abf3f9798f11036a230d3f153af81</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Application 1">3f3b77619714b11036a230d3f153af4d</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:45</sys_updated_on>
+        <ui_id>c724eb21-1186-4785-989a-07067a7126b2</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=f40abf3f9798f11036a230d3f153af81"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f40abf3f9798f11036a230d3f153af81"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=f40abf3f9798f11036a230d3f153af81"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=6c0abf3f9798f11036a230d3f153af0b^sys_idNOT IN490aff3f9798f11036a230d3f153af0f,890abf3f9798f11036a230d3f153aff5,910aff3f9798f11036a230d3f153af1c"/>
+    <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
+        <comment>Remove Discovery Logs of Cis which had logs in previous task and in open state.</comment>
+        <display_text/>
+        <flow display_value="MRDS Test for App">6c0abf3f9798f11036a230d3f153af0b</flow>
+        <inputs/>
+        <inputs/>
+        <order>13</order>
+        <parent_ui_id/>
+        <subflow display_value="MRDS: Subflow for filtered Dicovery Logs">b0fc175b1bb1a5149f0d43f8b04bcbf6</subflow>
+        <subflow_instance_inputs/>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:47</sys_created_on>
+        <sys_id>490aff3f9798f11036a230d3f153af0f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Application 1">3f3b77619714b11036a230d3f153af4d</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:47</sys_updated_on>
+        <ui_id>cdb09a16-4400-4091-8fb5-027a5443cd92</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=490aff3f9798f11036a230d3f153af0f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_sub_flow_instance</document>
+        <document_key>490aff3f9798f11036a230d3f153af0f</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:47</sys_created_on>
+        <sys_id>5d0aff3f9798f11036a230d3f153af1b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:47</sys_updated_on>
+        <value>1</value>
+        <variable display_value="wait_for_completion">150aff3f9798f11036a230d3f153af10</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=490aff3f9798f11036a230d3f153af0f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sysid</field>
+        <id>490aff3f9798f11036a230d3f153af0f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:47</sys_created_on>
+        <sys_id>510aff3f9798f11036a230d3f153af1b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:47</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_b0fc175b1bb1a5149f0d43f8b04bcbf6</table>
+        <value>{{c724eb21-1186-4785-989a-07067a7126b2.device_sys_server}}{{b720f85a-f843-49e6-b769-1996a26a8cc2.sys_id_cmdb}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>wait_for_completion</field>
+        <id>490aff3f9798f11036a230d3f153af0f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:47</sys_created_on>
+        <sys_id>d90aff3f9798f11036a230d3f153af1b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:47</sys_updated_on>
+        <table>var__m_sys_hub_sub_flow_instance_inputs_490aff3f9798f11036a230d3f153af0f</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_490aff3f9798f11036a230d3f153af0f^id=490aff3f9798f11036a230d3f153af0f"/>
+    <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=490aff3f9798f11036a230d3f153af0f^sys_idNOT IN150aff3f9798f11036a230d3f153af10"/>
+    <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,fd_hide_inline_script_widget=true,uiType=boolean,uiTypeLabel=True/False</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>wait_for_completion</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>wait_for_completion</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="">490aff3f9798f11036a230d3f153af0f</model>
+        <model_id>490aff3f9798f11036a230d3f153af0f</model_id>
+        <model_table>sys_hub_flow_logic_ext_input</model_table>
+        <name>var__m_sys_hub_sub_flow_instance_inputs_490aff3f9798f11036a230d3f153af0f</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_sub_flow_instance_inputs</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:47</sys_created_on>
+        <sys_id>150aff3f9798f11036a230d3f153af10</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Application 1">3f3b77619714b11036a230d3f153af4d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_sub_flow_instance_inputs>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=490aff3f9798f11036a230d3f153af0f"/>
+    <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
+        <comment>Check for every 4 minutes discovery_status goes to completed or max 45 minutes  wait whichever completes end the subflow</comment>
+        <display_text/>
+        <flow display_value="MRDS Test for App">6c0abf3f9798f11036a230d3f153af0b</flow>
+        <inputs/>
+        <inputs/>
+        <order>8</order>
+        <parent_ui_id>74aee0ce-bc37-40c0-a34f-e13c6c70bb53</parent_ui_id>
+        <subflow display_value="MRDS: Timeout 45">1fa8070c1b226594648feb17624bcb7d</subflow>
+        <subflow_instance_inputs/>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:46</sys_created_on>
+        <sys_id>890abf3f9798f11036a230d3f153aff5</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Application 1">3f3b77619714b11036a230d3f153af4d</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:47</sys_updated_on>
+        <ui_id>55167881-630e-480a-a642-63b7a406b6d1</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=890abf3f9798f11036a230d3f153aff5"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_sub_flow_instance</document>
+        <document_key>890abf3f9798f11036a230d3f153aff5</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:47</sys_created_on>
+        <sys_id>050aff3f9798f11036a230d3f153af0f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:47</sys_updated_on>
+        <value>1</value>
+        <variable display_value="wait_for_completion">010abf3f9798f11036a230d3f153aff7</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=890abf3f9798f11036a230d3f153aff5"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sysid</field>
+        <id>890abf3f9798f11036a230d3f153aff5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:47</sys_created_on>
+        <sys_id>090aff3f9798f11036a230d3f153af0e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:47</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_1fa8070c1b226594648feb17624bcb7d</table>
+        <value>{{a4285a20-f20d-4c72-aedb-6df5ac7bb78a.status_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>wait_for_completion</field>
+        <id>890abf3f9798f11036a230d3f153aff5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:47</sys_created_on>
+        <sys_id>810aff3f9798f11036a230d3f153af0f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:47</sys_updated_on>
+        <table>var__m_sys_hub_sub_flow_instance_inputs_890abf3f9798f11036a230d3f153aff5</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_890abf3f9798f11036a230d3f153aff5^id=890abf3f9798f11036a230d3f153aff5"/>
+    <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=890abf3f9798f11036a230d3f153aff5^sys_idNOT IN010abf3f9798f11036a230d3f153aff7"/>
+    <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,fd_hide_inline_script_widget=true,uiType=boolean,uiTypeLabel=True/False</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>wait_for_completion</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>wait_for_completion</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="">890abf3f9798f11036a230d3f153aff5</model>
+        <model_id>890abf3f9798f11036a230d3f153aff5</model_id>
+        <model_table>sys_hub_flow_logic_ext_input</model_table>
+        <name>var__m_sys_hub_sub_flow_instance_inputs_890abf3f9798f11036a230d3f153aff5</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_sub_flow_instance_inputs</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:47</sys_created_on>
+        <sys_id>010abf3f9798f11036a230d3f153aff7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Application 1">3f3b77619714b11036a230d3f153af4d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_sub_flow_instance_inputs>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=890abf3f9798f11036a230d3f153aff5"/>
+    <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
+        <comment>Update work notes of SCTASK with Failed devices DIscovery Log and add the evice to Affected CIs</comment>
+        <display_text/>
+        <flow display_value="MRDS Test for App">6c0abf3f9798f11036a230d3f153af0b</flow>
+        <inputs/>
+        <inputs/>
+        <order>18</order>
+        <parent_ui_id/>
+        <subflow display_value="MRDS: Create Task for Assignment Group">912845e31b892d10648feb17624bcb3d</subflow>
+        <subflow_instance_inputs/>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:47</sys_created_on>
+        <sys_id>910aff3f9798f11036a230d3f153af1c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Application 1">3f3b77619714b11036a230d3f153af4d</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:47</sys_updated_on>
+        <ui_id>f4b20dbe-b897-419e-8156-e1164557800b</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=910aff3f9798f11036a230d3f153af1c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_sub_flow_instance</document>
+        <document_key>910aff3f9798f11036a230d3f153af1c</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:47</sys_created_on>
+        <sys_id>5d0aff3f9798f11036a230d3f153af29</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:47</sys_updated_on>
+        <value>b64b55aedb53e3c8273a00b5ca9619e2</value>
+        <variable display_value="Assignment Grp">ad2845e31b892d10648feb17624bcb86</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_sub_flow_instance</document>
+        <document_key>910aff3f9798f11036a230d3f153af1c</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:47</sys_created_on>
+        <sys_id>990aff3f9798f11036a230d3f153af29</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:47</sys_updated_on>
+        <value>MRDS: Discovery Failed: Investigate the Reason Given in Worknotes</value>
+        <variable display_value="Short Description">d92845e31b892d10648feb17624bcb76</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_sub_flow_instance</document>
+        <document_key>910aff3f9798f11036a230d3f153af1c</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:47</sys_created_on>
+        <sys_id>990aff3f9798f11036a230d3f153af2a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:47</sys_updated_on>
+        <value>1</value>
+        <variable display_value="wait_for_completion">5d0aff3f9798f11036a230d3f153af1c</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=910aff3f9798f11036a230d3f153af1c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>assignment_grp</field>
+        <id>910aff3f9798f11036a230d3f153af1c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:47</sys_created_on>
+        <sys_id>550aff3f9798f11036a230d3f153af29</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:47</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_912845e31b892d10648feb17624bcb3d</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>description</field>
+        <id>910aff3f9798f11036a230d3f153af1c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:47</sys_created_on>
+        <sys_id>dd0aff3f9798f11036a230d3f153af28</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:47</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_912845e31b892d10648feb17624bcb3d</table>
+        <value>{{35a40f94-1f47-415c-95fc-2bd9d6ba6e98.message}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ritm_record</field>
+        <id>910aff3f9798f11036a230d3f153af1c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:47</sys_created_on>
+        <sys_id>190aff3f9798f11036a230d3f153af29</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:47</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_912845e31b892d10648feb17624bcb3d</table>
+        <value>{{2fbc2c1a-e608-4678-be81-f1b424fb2829.requested_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>short_description</field>
+        <id>910aff3f9798f11036a230d3f153af1c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:47</sys_created_on>
+        <sys_id>590aff3f9798f11036a230d3f153af28</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:47</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_912845e31b892d10648feb17624bcb3d</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sysid</field>
+        <id>910aff3f9798f11036a230d3f153af1c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:47</sys_created_on>
+        <sys_id>1d0aff3f9798f11036a230d3f153af28</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:47</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_912845e31b892d10648feb17624bcb3d</table>
+        <value>{{35a40f94-1f47-415c-95fc-2bd9d6ba6e98.deviceid}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>taskrecord</field>
+        <id>910aff3f9798f11036a230d3f153af1c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:47</sys_created_on>
+        <sys_id>910aff3f9798f11036a230d3f153af29</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:47</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_912845e31b892d10648feb17624bcb3d</table>
+        <value>{{101778ab-e4c2-4630-88aa-83acedf10e26.Record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>wait_for_completion</field>
+        <id>910aff3f9798f11036a230d3f153af1c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:47</sys_created_on>
+        <sys_id>190aff3f9798f11036a230d3f153af2a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:47</sys_updated_on>
+        <table>var__m_sys_hub_sub_flow_instance_inputs_910aff3f9798f11036a230d3f153af1c</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_910aff3f9798f11036a230d3f153af1c^id=910aff3f9798f11036a230d3f153af1c"/>
+    <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=910aff3f9798f11036a230d3f153af1c^sys_idNOT IN5d0aff3f9798f11036a230d3f153af1c"/>
+    <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,fd_hide_inline_script_widget=true,uiType=boolean,uiTypeLabel=True/False</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>wait_for_completion</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>wait_for_completion</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="">910aff3f9798f11036a230d3f153af1c</model>
+        <model_id>910aff3f9798f11036a230d3f153af1c</model_id>
+        <model_table>sys_hub_flow_logic_ext_input</model_table>
+        <name>var__m_sys_hub_sub_flow_instance_inputs_910aff3f9798f11036a230d3f153af1c</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_sub_flow_instance_inputs</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:47</sys_created_on>
+        <sys_id>5d0aff3f9798f11036a230d3f153af1c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Application 1">3f3b77619714b11036a230d3f153af4d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_sub_flow_instance_inputs>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=910aff3f9798f11036a230d3f153af1c"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=6c0abf3f9798f11036a230d3f153af0b^sys_idNOT IN340abf3f9798f11036a230d3f153af34,780abf3f9798f11036a230d3f153af30,bc0abf3f9798f11036a230d3f153af2c,e80abf3f9798f11036a230d3f153af24,ec0abf3f9798f11036a230d3f153af28"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">7c0abf3f9798f11036a230d3f153af33</block>
+        <comment>Get subflow outputs of MRDS: Subflow for filtered Dscovery Logs.</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="MRDS Test for App">6c0abf3f9798f11036a230d3f153af0b</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Get Flow Outputs">167796d8731f33008dcbedcc5ef6a7ce</logic_definition>
+        <order>14</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:45</sys_created_on>
+        <sys_id>340abf3f9798f11036a230d3f153af34</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:45</sys_updated_on>
+        <ui_id>d5a2cc2f-3cd2-4296-bf83-e31f7cbed0fc</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=340abf3f9798f11036a230d3f153af34"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>340abf3f9798f11036a230d3f153af34</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:45</sys_created_on>
+        <sys_id>b80abf3f9798f11036a230d3f153af5f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:45</sys_updated_on>
+        <value>85b0171f1bfd65149f0d43f8b04bcb49</value>
+        <variable display_value="Flow Template">4ab9da1c731f33008dcbedcc5ef6a77c</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_logic_ext_input_340abf3f9798f11036a230d3f153af34^id=340abf3f9798f11036a230d3f153af34"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_6c0abf3f9798f11036a230d3f153af0b^id=340abf3f9798f11036a230d3f153af34"/>
+    <sys_element_mapping action="delete_multiple" query="id=340abf3f9798f11036a230d3f153af34"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>context</field>
+        <id>340abf3f9798f11036a230d3f153af34</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:45</sys_created_on>
+        <sys_id>380abf3f9798f11036a230d3f153af5f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:45</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_167796d8731f33008dcbedcc5ef6a7ce</table>
+        <value>{{cdb09a16-4400-4091-8fb5-027a5443cd92.context}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>flow_template</field>
+        <id>340abf3f9798f11036a230d3f153af34</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:45</sys_created_on>
+        <sys_id>740abf3f9798f11036a230d3f153af5f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:45</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_167796d8731f33008dcbedcc5ef6a7ce</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=340abf3f9798f11036a230d3f153af34^sys_idNOT IN380abf3f9798f11036a230d3f153af36"/>
+    <sys_hub_flow_logic_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=4efa238b-edac-4197-90a1-a65f23bca37e</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sysid</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>sysid</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="">340abf3f9798f11036a230d3f153af34</model>
+        <model_id>340abf3f9798f11036a230d3f153af34</model_id>
+        <model_table>sys_hub_flow_logic_ext_input</model_table>
+        <name>var__m_sys_hub_flow_logic_ext_input_340abf3f9798f11036a230d3f153af34</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_logic_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:45</sys_created_on>
+        <sys_id>380abf3f9798f11036a230d3f153af36</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Application 1">3f3b77619714b11036a230d3f153af4d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:45</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_logic_ext_input>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=340abf3f9798f11036a230d3f153af34"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">b00abf3f9798f11036a230d3f153af30</block>
+        <comment>Remove the unwanted commas at last of string variables of variables discovery_statusid and discovery_ip.</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="MRDS Test for App">6c0abf3f9798f11036a230d3f153af0b</flow>
+        <flow_variable/>
+        <flow_variables_assigned>discovery_statusid,discovery_ip</flow_variables_assigned>
+        <inputs/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>10</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:45</sys_created_on>
+        <sys_id>780abf3f9798f11036a230d3f153af30</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:45</sys_updated_on>
+        <ui_id>7944a5f4-a5fa-4b62-8819-77b2dc0ee0c9</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=780abf3f9798f11036a230d3f153af30"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_6c0abf3f9798f11036a230d3f153af0b^id=780abf3f9798f11036a230d3f153af30"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=780abf3f9798f11036a230d3f153af30"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=780abf3f9798f11036a230d3f153af30^sys_idNOT IN780abf3f9798f11036a230d3f153af31,7c0abf3f9798f11036a230d3f153af31"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>discovery_statusid</input_name>
+        <instance>780abf3f9798f11036a230d3f153af30</instance>
+        <referenced_table>sys_hub_flow_logic</referenced_table>
+        <script>{"discovery_statusid":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**Available options display upon pressing \".\" after fd_data\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\nvar ab\u003d\"\";\nab\u003dfd_data.flow_var.discovery_statusid.slice(1,-1);\nreturn ab;"}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:45</sys_created_on>
+        <sys_id>780abf3f9798f11036a230d3f153af31</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:45</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>discovery_ip</input_name>
+        <instance>780abf3f9798f11036a230d3f153af30</instance>
+        <referenced_table>sys_hub_flow_logic</referenced_table>
+        <script>{"discovery_ip":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**Available options display upon pressing \".\" after fd_data\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\nvar ab\u003d\"\";\nab\u003dfd_data.flow_var.discovery_ip.slice(1,-1);\nreturn ab;"}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:45</sys_created_on>
+        <sys_id>7c0abf3f9798f11036a230d3f153af31</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:45</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">f40abf3f9798f11036a230d3f153af2c</block>
+        <comment>Set flow variable discovery status_id and discovery_ip with statusid and ip address from step 7 of discovery action</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="MRDS Test for App">6c0abf3f9798f11036a230d3f153af0b</flow>
+        <flow_variable/>
+        <flow_variables_assigned>discovery_statusid,discovery_ip</flow_variables_assigned>
+        <inputs/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>9</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>74aee0ce-bc37-40c0-a34f-e13c6c70bb53</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:45</sys_created_on>
+        <sys_id>bc0abf3f9798f11036a230d3f153af2c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:45</sys_updated_on>
+        <ui_id>dfc7bbbd-c4cb-4f4c-b6dc-4a05380c8ac8</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=bc0abf3f9798f11036a230d3f153af2c"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_6c0abf3f9798f11036a230d3f153af0b^id=bc0abf3f9798f11036a230d3f153af2c"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=bc0abf3f9798f11036a230d3f153af2c"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=bc0abf3f9798f11036a230d3f153af2c^sys_idNOT INb00abf3f9798f11036a230d3f153af2e,bc0abf3f9798f11036a230d3f153af2d"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>discovery_ip</input_name>
+        <instance>bc0abf3f9798f11036a230d3f153af2c</instance>
+        <referenced_table>sys_hub_flow_logic</referenced_table>
+        <script>{"discovery_ip":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**Available options display upon pressing \".\" after fd_data\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\nvar ip\u003d\"\";\nip\u003dfd_data.flow_var.discovery_ip+fd_data._7__mrds_discovery_action.iparray+\",\";\nreturn ip;"}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:45</sys_created_on>
+        <sys_id>b00abf3f9798f11036a230d3f153af2e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:45</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>discovery_statusid</input_name>
+        <instance>bc0abf3f9798f11036a230d3f153af2c</instance>
+        <referenced_table>sys_hub_flow_logic</referenced_table>
+        <script>{"discovery_statusid":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**Available options display upon pressing \".\" after fd_data\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\nvar statusid\u003d\"\";\nstatusid\u003dfd_data.flow_var.discovery_statusid+fd_data._7__mrds_discovery_action.status_id+\",\";\nreturn statusid;"}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:45</sys_created_on>
+        <sys_id>bc0abf3f9798f11036a230d3f153af2d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:45</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">ec0abf3f9798f11036a230d3f153af23</block>
+        <comment>Set Flowvariables discovery_statusid and discovery_ip to empty</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="MRDS Test for App">6c0abf3f9798f11036a230d3f153af0b</flow>
+        <flow_variable/>
+        <flow_variables_assigned>discovery_statusid,discovery_ip</flow_variables_assigned>
+        <inputs/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:45</sys_created_on>
+        <sys_id>e80abf3f9798f11036a230d3f153af24</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:45</sys_updated_on>
+        <ui_id>e6e58cfb-9d01-43db-b33b-b2310b6e20f3</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=e80abf3f9798f11036a230d3f153af24"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_6c0abf3f9798f11036a230d3f153af0b^id=e80abf3f9798f11036a230d3f153af24"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=e80abf3f9798f11036a230d3f153af24"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e80abf3f9798f11036a230d3f153af24^sys_idNOT IN6c0abf3f9798f11036a230d3f153af25"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <input_name>discovery_statusid</input_name>
+        <instance>e80abf3f9798f11036a230d3f153af24</instance>
+        <referenced_table>sys_hub_flow_logic</referenced_table>
+        <script>{"discovery_statusid":{"scriptActive":false}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:45</sys_created_on>
+        <sys_id>6c0abf3f9798f11036a230d3f153af25</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:45</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">280abf3f9798f11036a230d3f153af28</block>
+        <comment>Run discovery for every thousand IP Address and wait for 45 minutes or check for every 4 minutes for discovery_status goes to completed</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="MRDS Test for App">6c0abf3f9798f11036a230d3f153af0b</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:45</sys_created_on>
+        <sys_id>ec0abf3f9798f11036a230d3f153af28</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:45</sys_updated_on>
+        <ui_id>74aee0ce-bc37-40c0-a34f-e13c6c70bb53</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=ec0abf3f9798f11036a230d3f153af28"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_6c0abf3f9798f11036a230d3f153af0b^id=ec0abf3f9798f11036a230d3f153af28"/>
+    <sys_element_mapping action="delete_multiple" query="id=ec0abf3f9798f11036a230d3f153af28"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>ec0abf3f9798f11036a230d3f153af28</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:45</sys_created_on>
+        <sys_id>3c0abf3f9798f11036a230d3f153af2b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:45</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{b85314a2-f44c-48ff-8a76-11071ee9c309.chunk_thousand}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=ec0abf3f9798f11036a230d3f153af28"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ec0abf3f9798f11036a230d3f153af28"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=6c0abf3f9798f11036a230d3f153af0b"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=6c0abf3f9798f11036a230d3f153af0b^sys_idNOT IN680abf3f9798f11036a230d3f153af17,e80abf3f9798f11036a230d3f153af1e"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=7c2065ee-5ab4-4d14-addb-091634678771</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>discovery_statusid</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>discovery_statusid</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="MRDS Test for App">6c0abf3f9798f11036a230d3f153af0b</model>
+        <model_id>6c0abf3f9798f11036a230d3f153af0b</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_6c0abf3f9798f11036a230d3f153af0b</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:44</sys_created_on>
+        <sys_id>680abf3f9798f11036a230d3f153af17</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>discovery_statusid</sys_name>
+        <sys_package display_value="Application 1" source="x_909790_applicati">3f3b77619714b11036a230d3f153af4d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Application 1">3f3b77619714b11036a230d3f153af4d</sys_scope>
+        <sys_update_name>sys_hub_flow_variable_680abf3f9798f11036a230d3f153af17</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=b2406763-7685-41cd-ad2e-4e755aaaf5d2</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>discovery_ip</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>discovery_ip</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="MRDS Test for App">6c0abf3f9798f11036a230d3f153af0b</model>
+        <model_id>6c0abf3f9798f11036a230d3f153af0b</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_6c0abf3f9798f11036a230d3f153af0b</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-04 04:21:44</sys_created_on>
+        <sys_id>e80abf3f9798f11036a230d3f153af1e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>discovery_ip</sys_name>
+        <sys_package display_value="Application 1" source="x_909790_applicati">3f3b77619714b11036a230d3f153af4d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Application 1">3f3b77619714b11036a230d3f153af4d</sys_scope>
+        <sys_update_name>sys_hub_flow_variable_e80abf3f9798f11036a230d3f153af1e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-04 04:21:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_6c0abf3f9798f11036a230d3f153af0b"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_6c0abf3f9798f11036a230d3f153af0b"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_6c0abf3f9798f11036a230d3f153af0b"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_6c0abf3f9798f11036a230d3f153af0b"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=6c0abf3f9798f11036a230d3f153af0b"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=6c0abf3f9798f11036a230d3f153af0b"/>
+</record_update>
